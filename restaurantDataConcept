@@ -1,0 +1,135 @@
+database = {
+    inventory: {
+        plates: {
+                clean: 30,
+                dirty: 10
+            }
+        cups: {
+                clean: 30,
+                dirty: 10
+            }
+        utencils: {
+            knives: {
+                clean: 30,
+                dirty: 10
+            }
+            forks:{
+                clean: 30,
+                dirty: 10
+            }
+            spoons:{
+                clean: 30,
+                dirty: 10
+            }
+            teaspoons:{
+                clean: 30,
+                dirty: 10
+            }
+        }
+
+
+    }
+    stock: {
+        coffee: {
+            type1: '20lbs',
+            type2: '10lbs',
+            etc
+        }
+        tea: {
+            type1: '55 bags';
+            type2: '2 bags';
+            etc
+        }
+        cookies: {
+            oatmeal: 4,
+            chocolate: 2,
+        }
+        otherfoods and other drinks in  similar fashion...
+
+
+    }
+    tables: [
+        {
+        occupied: //true or false
+        seat1: {
+            occupied: true/false,
+            order: {
+                croissant: 3,
+                coffee: {
+                    size: grande,
+                    type: 1
+                }
+            }
+        }
+        seat2: {
+            occupied: true/false,
+            order: {
+                cookie: 1,
+                coffee: {
+                    size: small,
+                    type: 1
+                }
+            }
+        }
+        seat3: {
+            occupied: true/false,
+            order: {
+                croissant: 3,
+                tea: {
+                    size: grande,
+                    type: 1
+                }
+            }
+        },
+
+        {
+        occupied: //true or false
+        seat1: {
+            occupied: true/false,
+            order: {
+                croissant: 3,
+                coffee: {
+                    size: grande,
+                    type: 1
+                }
+            }
+        }
+        seat2: {
+            occupied: true/false,
+            order: {
+                cookie: 1,
+                coffee: {
+                    size: small,
+                    type: 1
+                }
+            }
+        }
+        seat3: {
+            occupied: true/false,
+            order: {
+                croissant: 3,
+                tea: {
+                    size: grande,
+                    type: 1
+                }
+            }
+        },
+
+        ... etc with more for tables
+        }
+    ]
+}
+
+
+Endpoints
+
+a couple enters the restaurant:
+/getTable:num, handleOccupyTable
+
+handleOccupyTable
+test if any tables are not opccupied, if so set it to occupied
+res.data.num   set seats 0 to num less one to occupied.
+
+
+a couple places an order/placeOrder
+

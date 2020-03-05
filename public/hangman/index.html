@@ -6,8 +6,63 @@
     </style>
 </head>
 <body>
-    <div class="content">
+    <div id="content">
         time to get to hanging.... I mean guessing...
+    </div>
+    
+    <div id='start'>
+        <form id="start-form" onsubmit="handleBegin(event)">
+            <button id="start-button">
+                Wanna play a game?
+            </button>
+        </form>
+    </div>
+    <div>
+        <h1 id='the-word'>
+    </div>
+    </h1>
+    <div id='letter-div'>
+        <form id='letter-form' onsubmit="handleAskServerForALetter(event)">
+            <label>
+                give me letter like your life depends on it:
+                <select id="letter" name="letter" class='letter-select'>
+                    <option value='a'>A</option>
+                    <option value='b'>B</option>
+                    <option value='c'>C</option>
+                    <option value='d'>D</option>
+                    <option value='e'>E</option>
+                    <option value='f'>F</option>
+                    <option value='g'>G</option>
+                    <option value='h'>H</option>
+                    <option value='i'>I</option>
+                    <option value='j'>J</option>
+                    <option value='k'>K</option>
+                    <option value='l'>L</option>
+                    <option value='m'>M</option>
+                    <option value='n'>N</option>
+                    <option value='o'>O</option>
+                    <option value='p'>P</option>
+                    <option value='q'>Q</option>
+                    <option value='r'>R</option>
+                    <option value='s'>S</option>
+                    <option value='t'>T</option>
+                    <option value='u'>U</option>
+                    <option value='v'>V</option>
+                    <option value='w'>W</option>
+                    <option value='x'>X</option>
+                    <option value='y'>Y</option>
+                    <option value='z'>Z</option>
+                </select>
+            </label>
+            <button id='submit-button' type="submit">TAKE A STAB AT IT</button>
+            <p id='guesses'></p>
+        </form>
+    </div>
+    <div id='duck-div'>
+        <img id='duck-img' src="hang1.png" alt="The accumulation of your failures manifested as an animatronic duck, being hung, piece-meal.">
+    </div>
+    <div id='restart-div'>
+        <button id='restart-button' onclick="resetTheGame(event)">CLAW YOUR WAY OUT OF THE JAWS OF DEATH</button>
     </div>
     <script src="scripts.js"></script>
 </body>

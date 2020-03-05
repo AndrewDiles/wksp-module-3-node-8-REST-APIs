@@ -42,7 +42,7 @@ You will divide your concerns in two: the frontend, and the backend. Start with 
 
 #### Backend
 
-- Create a data file with an array of 10 to 20 words objects. don't forget to `export` the array.
+- Create a data file with an array of 10 to 20 words objects. don't forget to `export` the array.  I did.  I did forget to export it for like an hour.
     - e.g. `{ word: 'bacon', id: '123', letterCount: '5' }`
 - Create a RESTful API that contains these endpoints.
     `GET /hangman/words` This will return an object that contains

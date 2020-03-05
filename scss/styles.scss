@@ -6,7 +6,14 @@ body {
     background: #fafafa;
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
+    justify-content: space-evenly;
+    // background-image: url('data/assets/FNaF.jpg');
+    // background-image: url('/FNaF.jpg');
+    background-size: cover;
+    background-color: black;
+    color: red;
 }
 
 .main {
@@ -26,17 +33,19 @@ body {
     }
 }
 
-.content {
+#content {
     display: flex;
     flex-direction: column;
     margin-top: 24px;
+    justify-content: space-evenly;
+    min-height: 500px;
 }
 
 .box {
     border: 1px solid #707070;
     flex: 0 0 49%;
     margin-bottom: 24px;
-    min-height: 200px;
+    // min-height: 200px;
     padding: 18px;
 }
 
@@ -49,11 +58,57 @@ body {
     }
 }
 
+#letter-div {
+    display: none;
+}
+
+#duck-div {
+    display: none;
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    left: 0;
+    top: 0;
+}
+#duck-img {
+    position: absolute;
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+    left: 0;
+    top: 0;
+}
+
+#letter, #submit-button, #start-button, #restart-button {
+    background-color: black;
+    border-color: orange;
+    color: orange;
+    outline: 0;
+}
+// #letter-selected {           trying to style the options of select but it seems to be difficult
+//     background-color: black;
+// }
+// select > option {
+//     background-color: black;
+//     color: orange;
+// }
+#restart-div {
+    display: none;
+    position: absolute;
+    top: 95%;
+    width: 100%;
+}
+
+#restart-button {
+    position: absolute;
+    left: 0;
+}
+
 @media screen and (min-width: 900px) {
     
-    .content {
-        flex-direction: row;
-        justify-content: space-between;
-        min-height: 500px;
+    #content {
+        // flex-direction: row;
+        // min-height: 500px;
     }
 }
+
